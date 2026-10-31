@@ -1,0 +1,446 @@
+/* Tabela real em HTML; apenas os escudos vêm da imagem fornecida. */
+* { 
+    box-sizing: border-box; 
+}
+body { 
+    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #000; 
+    background: #fff; 
+}
+
+main { 
+    width: 455px; 
+    max-width: 100%; 
+}
+
+.tabela-container { 
+    overflow-x: auto;
+}
+
+table { 
+    width: 455px; 
+    table-layout: fixed; 
+    border-collapse: collapse; 
+    font-size: 13.5px; 
+}
+caption { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    overflow: hidden; 
+    clip-path: inset(50%); 
+}
+
+.col-pos { 
+    width: 35px; 
+} 
+
+.col-time { 
+    width: 212px; 
+} 
+
+.col-pts { 
+    width: 48px; 
+}
+
+.col-j, .col-apr, .col-v { 
+    width: 41px; 
+} 
+
+.col-sg { 
+    width: 37px; 
+}
+
+thead { 
+    background: #4ca625; 
+    color: #fff; 
+}
+
+thead th { 
+    height: 30px; 
+    font-size: 
+    14px; 
+}
+
+.titulo-time { 
+    text-align: left; 
+    padding-left: 40px; 
+}
+
+tbody tr { 
+    height: 28px; 
+}
+
+tbody tr:nth-child(odd) {
+    background: #efffef; 
+}
+
+tbody tr:nth-child(even) { 
+    background: #fff; 
+}
+td, tbody th { 
+    padding: 0; 
+    text-align: center; 
+    border-right: 2px solid #fff; 
+}
+
+td:last-child { 
+    border-right: 0; 
+}
+
+.time { 
+    text-align: left;
+    font-weight: normal; 
+    white-space: nowrap; 
+}
+
+.escudo { 
+    display: inline-block; 
+    width: 35px; 
+    height: 28px; 
+    margin-right: 5px; 
+    vertical-align: middle; 
+    background-image: url('../img/tabela-referencia.png'); 
+    background-repeat: no-repeat; 
+}
+
+.pontos { 
+    font-weight: bold; 
+}
+
+.legenda, nav { 
+    margin: 16px 12px; 
+    font-size: 13px; 
+    line-height: 1.5; 
+}
+
+a { 
+    color: #174a91; 
+}
+
+a:focus-visible, 
+.tabela-container:focus-visible { 
+    outline: 2px solid #174a91; 
+    outline-offset: -2px; 
+}
+
+.linha-1 .posicao { 
+    background: #83e28e; 
+}
+
+.linha-1 .jogos { 
+    background: #c0e6f5; 
+}
+
+.linha-1 .aproveitamento { 
+    background: #63be7b; 
+}
+
+.escudo-1 { 
+    background-position: -35px -30px; 
+}
+
+.linha-2 .posicao { 
+    background: #83e28e; 
+}
+
+.linha-2 .jogos { 
+    background: #c0e6f5; 
+}
+
+.linha-2 .aproveitamento { 
+    background: #63be7b; 
+}
+
+.escudo-2 { 
+    background-position: -35px -58px; 
+}
+
+.linha-3 .posicao { 
+    background: #83e28e; 
+}
+
+.linha-3 .jogos { 
+    background: #c0e6f5; 
+}
+
+.linha-3 .aproveitamento { 
+    background: #b0ddbd; 
+}
+
+.escudo-3 { 
+    background-position: -35px -86px; 
+}
+
+.linha-4 .posicao { 
+    background: #83e28e; 
+}
+
+.linha-4 .jogos { 
+    background: #c0e6f5; 
+}
+
+.linha-4 .aproveitamento { 
+    background: #d6edde; 
+}
+
+.escudo-4 { 
+    background-position: -35px -114px; 
+}
+
+.linha-5 .posicao { 
+    background: #c1f0c8; 
+}
+
+.linha-5 .jogos { 
+    background: #c0e6f5; 
+}
+
+.linha-5 .aproveitamento { 
+    background: #d6edde; 
+}
+
+.escudo-5 { 
+    background-position: -35px -142px; 
+}
+
+.linha-6 .posicao { 
+    background: #c1f0c8; 
+}
+
+.linha-6 .jogos { 
+    background: #d5bfb0; 
+}
+
+.linha-6 .aproveitamento { 
+    background: #8ace9c; 
+}
+
+.escudo-6 { 
+    background-position: -35px -170px; 
+}
+
+.linha-7 .posicao { 
+    background: #dae9f8; 
+}
+
+.linha-7 .jogos { 
+    background: #d5bfb0; 
+}
+
+.linha-7 .aproveitamento { 
+    background: #b8e1c4; 
+}
+
+.escudo-7 { 
+    background-position: -35px -198px; 
+}
+
+.linha-8 .posicao { 
+    background: #dae9f8; 
+}
+
+.linha-8 .jogos { 
+    background: #c0e6f5; 
+}
+
+.linha-8 .aproveitamento { 
+    background: #fcfcff; 
+}
+
+.escudo-8 { 
+    background-position: -35px -226px; 
+}
+
+.linha-9 .posicao { 
+    background: #dae9f8; 
+}
+
+.linha-9 .jogos { 
+    background: #c0e6f5; 
+}
+
+.linha-9 .aproveitamento { 
+    background: #fbebee; 
+}
+
+.escudo-9 { 
+    background-position: -35px -254px; 
+}
+
+.linha-10 .posicao { 
+    background: #dae9f8; 
+}
+
+.linha-10 .jogos { 
+    background: #ea986c; 
+}
+
+.linha-10 .aproveitamento { 
+    background: #c3e5ce; 
+}
+
+.escudo-10 { 
+    background-position: -35px -282px; 
+}
+
+.linha-11 .posicao { 
+    background: #dae9f8; 
+}
+
+.linha-11 .jogos { 
+    background: #d5bfb0; 
+}
+
+.linha-11 .aproveitamento { 
+    background: #fbf2f5; 
+}
+
+.escudo-11 { 
+    background-position: -35px -310px; 
+}
+
+.linha-12 .posicao { 
+    background: #dae9f8; 
+}
+
+.linha-12 .jogos { 
+    background: #ea986c; 
+}
+
+.linha-12 .aproveitamento { 
+    background: #fcfcff; 
+}
+
+.escudo-12 { 
+    background-position: -35px -338px; 
+}
+
+.linha-13 .posicao { 
+    background: #ffffff; 
+}
+
+.linha-13 .jogos { 
+    background: #c0e6f5; 
+}
+
+.linha-13 .aproveitamento { 
+    background: #facbcd; 
+}
+
+.escudo-13 { 
+    background-position: -35px -366px; 
+}
+
+.linha-14 .posicao { 
+    background: #ffffff; 
+}
+
+.linha-14 .jogos { 
+    background: #ff7128; 
+}
+
+.linha-14 .aproveitamento { 
+    background: #d6edde; 
+}
+
+.escudo-14 { 
+    background-position: -35px -394px; 
+}
+
+.linha-15 .posicao { 
+    background: #ffffff; 
+}
+
+.linha-15 .jogos { 
+    background: #ea986c; 
+}
+
+.linha-15 .aproveitamento { 
+    background: #fbe3e6; 
+}
+
+.escudo-15 { 
+    background-position: -35px -422px; 
+}
+
+.linha-16 .posicao { 
+    background: #ffffff; 
+}
+
+.linha-16 .jogos { 
+    background: #c0e6f5; 
+}
+
+.linha-16 .aproveitamento { 
+    background: #fababd; 
+}
+
+.escudo-16 { 
+    background-position: -35px -450px; 
+}
+
+.linha-17 .posicao { 
+    background: #fbe2d5; 
+}
+
+.linha-17 .jogos { 
+    background: #c0e6f5; 
+}
+
+.linha-17 .aproveitamento { 
+    background: #fababd; 
+}
+
+.escudo-17 { 
+    background-position: -35px -478px; 
+}
+
+.linha-18 .posicao { 
+    background: #fbe2d5; 
+}
+
+.linha-18 .jogos { 
+    background: #d5bfb0; 
+}
+
+.linha-18 .aproveitamento { 
+    background: #f87c7e; 
+}
+
+.escudo-18 { 
+    background-position: -35px -506px; 
+}
+
+.linha-19 .posicao { 
+    background: #fbe2d5; 
+}
+
+.linha-19 .jogos { 
+    background: #d5bfb0; 
+}
+
+.linha-19 .aproveitamento { 
+    background: #f87c7e; 
+}
+
+.escudo-19 { 
+    background-position: -35px -534px; 
+}
+
+.linha-20 .posicao { 
+    background: #fbe2d5; 
+}
+
+.linha-20 .jogos { 
+    background: #ea986c; 
+}
+
+.linha-20 .aproveitamento { 
+    background: #f8696b; 
+}
+
+.escudo-20 { 
+    background-position: -35px -562px; 
+}

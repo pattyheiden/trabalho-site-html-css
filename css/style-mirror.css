@@ -1,0 +1,132 @@
+body {
+    width: 940px;
+    max-width: calc(100% - 32px);
+    margin: 40px auto;
+    color: #333;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.logo { 
+    display: block; 
+    max-width: 100%;
+    height: auto; 
+}
+
+h1 { 
+padding: 10px; 
+background: #bcbcb8; 
+font-size: 32px; 
+}
+
+h2 { 
+    clear: both; 
+    margin-top: 40px; 
+    border-bottom: 2px solid #333; 
+    font-size: 24px; }
+p { padding: 0 45px; text-indent: 15px; 
+}
+
+a { 
+    color: #0000ee; 
+}
+a:focus-visible { 
+    outline: 3px solid #333; 
+    outline-offset: 4px; 
+}
+figure { 
+    padding: 16px; 
+    border: 1px solid #ccc; 
+    background: #f2eded; 
+    text-align: center; 
+}
+
+figure img { 
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 auto;
+}
+
+figcaption { 
+    margin-top: 10px; 
+    font-style: italic; 
+}
+.centro-distribuicao { 
+    width: 500px; 
+    max-width: 100%; 
+    margin: 30px auto; 
+}
+.familia-pelho { 
+    float: right; 
+    width: 300px; 
+    max-width: 100%; 
+    margin: 0 0 10px 50px; 
+}
+.chamada { 
+    display: block; 
+    margin-top: 40px; 
+    padding: 18px; 
+    background: #dcdcf3; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 48px; 
+    font-weight: bold; 
+}
+
+footer { 
+    clear: both; 
+    display: flex; 
+    align-items: center; 
+    gap: 35px; 
+    margin-top: 65px; 
+    color: #666; 
+    font-size: 14px; 
+}
+
+footer img { 
+    height: auto; 
+}
+
+@media (max-width: 650px) {
+    body { 
+        margin: 24px auto; 
+    }
+
+    h1 { 
+        font-size: 26px; 
+    }
+
+    p { 
+        padding: 0; 
+        line-height: 1.5; 
+    }
+
+    .familia-pelho { 
+        float: none; 
+        margin: 20px auto; 
+    }
+
+    .chamada { 
+        font-size: 30px; 
+    }
+
+    li { 
+        margin-bottom: 5px; 
+    }
+
+    footer { 
+        gap: 18px; 
+        margin-top: 40px; 
+    }
+
+}
+
+.chamada { 
+    color: #0000ee; 
+}
+.navegacao-trabalho { 
+    margin-top: 24px; 
+    font-size: 14px; 
+}
